@@ -1,9 +1,30 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  /* font-size: 20px; */
+  font-family: 'Architects Daughter', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body::-webkit-scrollbar {
+  background: #fff;
+  width: 0.5vw;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #555;
+}
+
+body {
+  /* background-image: url('assets/bg1.jpg'); */
+  background-image: url('assets/bg2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.hide {
+  display: none !important;
 }

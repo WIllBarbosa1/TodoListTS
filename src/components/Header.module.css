@@ -1,0 +1,10 @@
+.header {
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #04E824;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
