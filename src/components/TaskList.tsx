@@ -4,16 +4,17 @@ import styles from './TaskList.module.css';
 
 interface Props {
     taskList: ITask[];
+    handleDelete(id: number): void;
 }
 
-const TaskList = ({ taskList }: Props) => {
+const TaskList = ({ taskList, handleDelete }: Props) => {
     return (
-        <>
+        <div className={styles.list}>
             {taskList.length > 0
                 ? (
                     taskList.map((task) => {
                         return (
-                            <TaskItem task={task} />
+                            <TaskItem task={task} handleDelete={handleDelete} />
                         )
                     })
                 )
@@ -21,7 +22,7 @@ const TaskList = ({ taskList }: Props) => {
                     <p>Não existem tarefas cadastradas.</p>
                 )
             }
-        </>
+        </div>
     )
 }
 

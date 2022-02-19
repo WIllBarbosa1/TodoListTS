@@ -46,6 +46,8 @@
 }
 
 .input_container label{
+    text-shadow: #000 2px 2px 10px;
+    color: #04E824;
     font-weight: bolder;
     margin-bottom: .4em;
 }
