@@ -19,6 +19,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    font-size: x-large;
 }
 
 .modal h2 {

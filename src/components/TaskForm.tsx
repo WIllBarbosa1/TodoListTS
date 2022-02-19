@@ -48,8 +48,10 @@ const TaskForm = ({ btnText, taskList, setTaskList, backgoundForm, task, handleU
         }
     };
 
+    console.log(backgoundForm);
+
     return (
-        <form className={`${styles.form} ${backgoundForm}`} onSubmit={addTaskHandler}>
+        <form className={`${styles.form} ${backgoundForm === 'transparent' ? styles.transparent : null}`} onSubmit={addTaskHandler}>
             <div className={styles.input_container}>
                 <label htmlFor="title">Título:</label>
                 <input type="text" name="title" placeholder="Título da tarefa" onChange={handleChange} value={title} />
